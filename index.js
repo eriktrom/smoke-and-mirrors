@@ -73,16 +73,6 @@ module.exports = {
     }
   },
 
-  treeForAddon: function() {
-    var tree = this._super.treeForAddon.apply(this, arguments);
-
-    if (/production/.test(this._env) || /test/.test(this._env)) {
-      tree = new Funnel(tree, { exclude: [ /-debug/ ] });
-    }
-
-    return tree;
-  },
-
   treeForApp: function() {
     var tree = this._super.treeForApp.apply(this, arguments);
 

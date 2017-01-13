@@ -18,10 +18,7 @@
   },
   "homepage": "https://runspired.github.io/smoke-and-mirrors",
   "bugs": "https://github.com/runspired/smoke-and-mirrors/issues",
-  "author": {
-    "name": "Chris Thoburn (@runspired)",
-    "url": "http://runspired.com"
-  },
+  "author": "Chris Thoburn (@runspired) http://runspired.com",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
@@ -71,5 +68,6 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
-  }
+  },
+  "main": "index.js"
 }
